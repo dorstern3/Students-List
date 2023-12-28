@@ -12,11 +12,10 @@ class _NoteState extends State<Note> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Pallete.blackColor,
       appBar: AppBar(
+        backgroundColor: Pallete.blackStorngColor,
         elevation: 0,
-        // backgroundColor: Pallete.blackStorngColor,
-        title: Center(
+        title: const Center(
           child: Text(
             'Note',
             style: TextStyle(color: Pallete.redColor, fontSize: 25),

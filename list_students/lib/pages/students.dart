@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:list_students/pages/note.dart';
 import 'package:list_students/theme/palette.dart';
@@ -21,7 +20,6 @@ class _StudentsState extends State<Students> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Pallete.blackColor,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           addstudentsDialog();
@@ -161,6 +159,8 @@ class _StudentsState extends State<Students> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 TextField(
+                                  style: const TextStyle(
+                                      color: Pallete.blackColor),
                                   onChanged: (value) {
                                     setState(() {
                                       editName = value;
@@ -191,6 +191,8 @@ class _StudentsState extends State<Students> {
                                   height: 30,
                                 ),
                                 TextField(
+                                  style: const TextStyle(
+                                      color: Pallete.blackColor),
                                   onChanged: (value) {
                                     setState(() {
                                       editCountry = value;

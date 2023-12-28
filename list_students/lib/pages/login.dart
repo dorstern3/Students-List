@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import 'package:list_students/pages/students.dart';
 import 'package:list_students/theme/palette.dart';
 import 'package:list_students/widgets/finger_print.dart';
@@ -33,7 +32,7 @@ class _LoginState extends State<Login> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Center(
+              const Center(
                   child: Text(
                 'Login teacher',
                 style: TextStyle(
@@ -41,34 +40,34 @@ class _LoginState extends State<Login> {
                   color: Pallete.redColor,
                 ),
               )),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               LoginField(
                 hintText: 'Username',
                 controllerLogin: emailControllerLogin,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               LoginField(
                 hintText: 'Password',
                 controllerLogin: passwordControllerLogin,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               LoginButton(
                 onPressed: signIn,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Container(
                 width: 300,
                 decoration:
                     BoxDecoration(border: Border.all(color: Colors.blueAccent)),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -78,10 +77,10 @@ class _LoginState extends State<Login> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              RegisterNavigate(),
+              const RegisterNavigate(),
             ],
           ),
         ),

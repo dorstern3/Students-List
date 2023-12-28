@@ -31,7 +31,7 @@ class _RegisterState extends State<Register> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Center(
+              const Center(
                 child: Text(
                   'Register teacher',
                   style: TextStyle(
@@ -40,26 +40,26 @@ class _RegisterState extends State<Register> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               RegisterField(
                   hintText: 'Username',
                   controllerRegister: emailControllerRegister),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               RegisterField(
                   hintText: 'Password',
                   controllerRegister: passwordControllerRegister),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               RegisterButton(onPressed: signUp),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              LoginNavigate(),
+              const LoginNavigate(),
             ],
           ),
         ),

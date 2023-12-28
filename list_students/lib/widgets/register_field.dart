@@ -14,7 +14,7 @@ class RegisterField extends StatelessWidget {
         maxWidth: 300,
       ),
       child: TextFormField(
-        // autofocus: true,
+        autofocus: true,
         style: const TextStyle(color: Pallete.blackColor),
         controller: controllerRegister,
         textAlign: TextAlign.left,
@@ -23,14 +23,14 @@ class RegisterField extends StatelessWidget {
           fillColor: Pallete.orangeColor,
           filled: true,
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Pallete.blackStorngColor,
               width: 3,
             ),
             borderRadius: BorderRadius.circular(10),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Pallete.blackStorngColor,
               width: 3,
             ),
@@ -56,7 +56,7 @@ class RegisterButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           'Register',
-          style: TextStyle(
+          style: const TextStyle(
             color: Pallete.blackColor,
             fontSize: 18,
           ),
@@ -89,7 +89,7 @@ class LoginNavigate extends StatelessWidget {
         child: Text(
           textAlign: TextAlign.center,
           'Are you already registered? \n Login',
-          style: TextStyle(
+          style: const TextStyle(
             color: Pallete.blackColor,
             fontSize: 18,
           ),
@@ -106,4 +106,3 @@ class LoginNavigate extends StatelessWidget {
     );
   }
 }
-// \n Login

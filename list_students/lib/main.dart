@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:list_students/pages/students.dart';
 import 'package:list_students/theme/palette.dart';
 import 'package:list_students/pages/login.dart';
 
@@ -21,8 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Pallete.blackColor,
       ),
-      home: Login(),
-      // home: Students(),
+      home: const Login(),
     );
   }
 }

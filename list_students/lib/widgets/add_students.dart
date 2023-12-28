@@ -16,8 +16,9 @@ class AddStudents extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           TextField(
+            style: const TextStyle(color: Pallete.blackColor),
             controller: contrllerName,
-            // autofocus: true,
+            autofocus: true,
             decoration: InputDecoration(
               border: InputBorder.none,
               enabledBorder: OutlineInputBorder(
@@ -34,17 +35,18 @@ class AddStudents extends StatelessWidget {
                 color: Pallete.redColor,
               ),
               hintText: 'Studnet Name',
-              hintStyle: TextStyle(
+              hintStyle: const TextStyle(
                 color: Pallete.blackColor,
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           TextField(
+            style: const TextStyle(color: Pallete.blackColor),
             controller: contrllerCountry,
-            // autofocus: true,
+            autofocus: true,
             decoration: InputDecoration(
               border: InputBorder.none,
               focusedBorder: OutlineInputBorder(
@@ -61,7 +63,7 @@ class AddStudents extends StatelessWidget {
                 color: Pallete.redColor,
               ),
               hintText: 'Studnet Country',
-              hintStyle: TextStyle(
+              hintStyle: const TextStyle(
                 color: Pallete.blackColor,
               ),
             ),

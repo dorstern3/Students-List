@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-import 'package:list_students/pages/login.dart';
 import 'package:list_students/pages/register.dart';
 import 'package:list_students/pages/students.dart';
 import 'package:list_students/theme/palette.dart';
@@ -20,7 +19,7 @@ class LoginField extends StatelessWidget {
         maxWidth: 300,
       ),
       child: TextFormField(
-        // autofocus: true,
+        autofocus: true,
         style: const TextStyle(color: Pallete.blackColor),
         controller: controllerLogin,
         textAlign: TextAlign.left,
@@ -29,14 +28,14 @@ class LoginField extends StatelessWidget {
           fillColor: Pallete.orangeColor,
           filled: true,
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Pallete.blackStorngColor,
               width: 3,
             ),
             borderRadius: BorderRadius.circular(10),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Pallete.blackStorngColor,
               width: 3,
             ),
@@ -62,7 +61,7 @@ class LoginButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           'Login',
-          style: TextStyle(
+          style: const TextStyle(
             color: Pallete.blackColor,
             fontSize: 18,
           ),
@@ -86,7 +85,7 @@ class FacebookButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon: Icon(
+      icon: const Icon(
         Icons.facebook_outlined,
         size: 35,
       ),
@@ -124,7 +123,7 @@ class GoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon: Icon(
+      icon: const Icon(
         Icons.email,
         size: 35,
       ),
@@ -181,7 +180,7 @@ class RegisterNavigate extends StatelessWidget {
         },
         child: Text(
           'Register',
-          style: TextStyle(
+          style: const TextStyle(
             color: Pallete.blackColor,
             fontSize: 18,
           ),

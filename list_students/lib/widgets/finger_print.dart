@@ -54,7 +54,7 @@ class _FingerPrintState extends State<FingerPrint> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Students(),
+          builder: (context) => const Students(),
         ),
       );
       // ignore: avoid_print
