@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">StudentsList Project</string>
+<string name="facebook_app_id">350036467656124</string>
+<string name="fb_login_protocol_scheme">fb350036467656124</string>
+<string name="facebook_client_token">612d89fe9bb083a76e3a8af83821eb73</string>
+</resources>
