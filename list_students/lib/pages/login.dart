@@ -34,7 +34,7 @@ class _LoginState extends State<Login> {
             children: [
               const Center(
                   child: Text(
-                'Login teacher',
+                'Lecturer Login',
                 style: TextStyle(
                   fontSize: 40,
                   color: Pallete.redColor,

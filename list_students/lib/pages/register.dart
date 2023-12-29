@@ -33,7 +33,7 @@ class _RegisterState extends State<Register> {
             children: [
               const Center(
                 child: Text(
-                  'Register teacher',
+                  'Lecturer Registration',
                   style: TextStyle(
                     fontSize: 40,
                     color: Pallete.redColor,
