@@ -65,8 +65,6 @@ class _LoginState extends State<Login> {
               ),
               Container(
                 width: 300,
-                decoration:
-                    BoxDecoration(border: Border.all(color: Colors.blueAccent)),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.center,
