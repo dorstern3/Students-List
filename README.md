@@ -6,6 +6,7 @@
 
 ## View:
 - ### Android device:
+https://github.com/dorstern3/Students-List/assets/96941609/e2164241-6058-4c55-a0a7-2a32d72b7e17
 
 ### Register:
 <img width="192" alt="Register" src="https://github.com/dorstern3/Students-List/assets/96941609/22ad0ba0-0a15-4c3d-b777-b05ff16b96af">
